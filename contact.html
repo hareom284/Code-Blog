@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeBlog</></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<style type="text/css">
+		.img_style{
+			height: 700px;
+			max-width: 100%;
+		}
+
+		.content{
+			position: absolute;
+			top:35%;
+			left: 15%;
+			color: white;
+		}
+
+		.hero-image {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contact1.jpg");
+			height: 50%;
+			position: relative;
+			background-size: cover;
+		}
+
+		.hero-text {
+			text-align: center;
+			position: relative;
+			padding: 200px;
+			top: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- nav start -->
+	<!-- nav end -->
+
+	<!-- banner start -->
+		<div class="hero-image d-none d-lg-block">
+			<div class="hero-text">
+				<h1 class="text-light"><i><i class="fas fa-quote-left fa-xs"></i> Call us anytime. <br><br> We don't take a break from our customers. <i class="fas fa-quote-right fa-xs"></i></i></h1>
+			</div>
+		</div>
+	<!-- banner end  -->
+	
+	<div class="container-fluid container-lg my-5 px-0">
+		<div class="row">
+			<!-- contact -->
+				<div class="col-lg-6 d-none d-lg-block d-md-block ">
+					<img src="images/contact.jpg" class="img-fluid my-5 img_style w-100" >
+					<div class="content font-weight-bold text-uppercase">
+						<i class="fas fa-map-marker-alt "></i>
+						<span class="pl-4">Address</span>
+						<p class="pt-3 pl-5">No.007,29th Floor,Manhantan St,New York</p>
+						<i class="fas fa-phone-alt mt-5"></i>
+						<span class="pl-4">Let us hear u</span>
+						<p class="pt-3 pl-5">+95 9547382951</p>
+						<i class="fas fa-envelope mt-5"></i>
+						<span class="pl-4">Customer Care</span>
+						<p class="pt-3 pl-5">customercare@gmail.com</p>
+					</div>
+				</div>
+			<!-- contact end -->
+
+			<!-- form start -->
+				<div class="offset-md-3 col-md-6 offset-lg-0">
+					<h3 class="my-5 text-center text-primary">Keep in touch with us</h3>
+					<form class="container-sm">
+						<div class="form-group">
+							<label class="font-weight-bold mb-4">Name</label>
+							<input type="text" name="" class="form-control">
+							<label class="font-weight-bold my-4">Phone</label>
+							<input type="number" name="" class="form-control">
+							<label class="font-weight-bold my-4">Address</label>
+							<textarea class="form-control" rows="6"></textarea>
+							<button class="btn btn-outline-info my-5 float-right w-25" id="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			<!-- form end  -->
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#submit').click(function(){
+				alert("thank you for your feedback")
+			})
+		})
+	</script>
+</body>
+</html>
