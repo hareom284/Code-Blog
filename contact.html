@@ -4,12 +4,11 @@
 	<title>CodeBlog</></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 	<style type="text/css">
 		.img_style{
-			height: 700px;
-			max-width: 100%;
+			height: 700px;	
 		}
 
 		.content{
@@ -40,53 +39,61 @@
 	<!-- nav end -->
 
 	<!-- banner start -->
-		<div class="hero-image d-none d-lg-block">
-			<div class="hero-text">
-				<h1 class="text-light"><i><i class="fas fa-quote-left fa-xs"></i> Call us anytime. <br><br> We don't take a break from our customers. <i class="fas fa-quote-right fa-xs"></i></i></h1>
-			</div>
+	<div>
+		<img src="images/contact1.jpg" class="img-fluid d-md-none d-sm-block">
+	</div>
+	<div class="hero-image d-none d-md-block">
+		<div class="hero-text">
+			<h1 class="text-light"><i><i class="fas fa-quote-left fa-xs"></i> Call us anytime. <br><br> We don't take a break from our customers. <i class="fas fa-quote-right fa-xs"></i></i></h1>
 		</div>
+	</div>
 	<!-- banner end  -->
 	
-	<div class="container-fluid container-lg my-5 px-0">
+	<div class="container my-5">
 		<div class="row">
-			<!-- contact -->
-				<div class="col-lg-6 d-none d-lg-block d-md-block ">
-					<img src="images/contact.jpg" class="img-fluid my-5 img_style w-100" >
-					<div class="content font-weight-bold text-uppercase">
-						<i class="fas fa-map-marker-alt "></i>
-						<span class="pl-4">Address</span>
-						<p class="pt-3 pl-5">No.007,29th Floor,Manhantan St,New York</p>
-						<i class="fas fa-phone-alt mt-5"></i>
-						<span class="pl-4">Let us hear u</span>
-						<p class="pt-3 pl-5">+95 9547382951</p>
-						<i class="fas fa-envelope mt-5"></i>
-						<span class="pl-4">Customer Care</span>
-						<p class="pt-3 pl-5">customercare@gmail.com</p>
-					</div>
+			<!-- contact start -->
+			<div class="col-md-6 d-none d-md-block px-0 ">
+				<img src="images/contact.jpg" class="img-fluid my-5 img_style w-100" >
+				<div class="content font-weight-bold text-uppercase">
+					<i class="fas fa-map-marker-alt "></i>
+					<span class="pl-4">Address</span>
+					<p class="pt-3 pl-5">No.007,29th Floor,Manhantan St,New York</p>
+					<i class="fas fa-phone-alt mt-5"></i>
+					<span class="pl-4">Let us hear u</span>
+					<p class="pt-3 pl-5">+95 9547382951</p>
+					<i class="fas fa-envelope mt-5"></i>
+					<span class="pl-4">Customer Care</span>
+					<p class="pt-3 pl-5">customercare@gmail.com</p>
 				</div>
+			</div>
 			<!-- contact end -->
 
 			<!-- form start -->
-				<div class="offset-md-3 col-md-6 offset-lg-0">
-					<h3 class="my-5 text-center text-primary">Keep in touch with us</h3>
-					<form class="container-sm">
-						<div class="form-group">
-							<label class="font-weight-bold mb-4">Name</label>
-							<input type="text" name="" class="form-control">
-							<label class="font-weight-bold my-4">Phone</label>
-							<input type="number" name="" class="form-control">
-							<label class="font-weight-bold my-4">Address</label>
-							<textarea class="form-control" rows="6"></textarea>
-							<button class="btn btn-outline-info my-5 float-right w-25" id="submit">Submit</button>
-						</div>
-					</form>
-				</div>
+			<div class="col-md-6 offset-sm-3 offset-md-0 col-sm-4">
+				<h3 class="text-center text-info my-5 ">Keep In Touch With Us</h3>
+				<form class="w-100"> 
+					<div class="form-group">
+						<label for="Name" class="mb-4 font-weight-bold">Name</label>
+						<input type="text" name="" class="form-control " id="Name">
+					</div>
+					<div class="form-group">
+						<label for="ph" class="mb-4 font-weight-bold">Phone Number</label>
+						<input type="number" name="" class="form-control " id="ph">
+					</div>
+					<div class="form-group">
+						<label for="addr" class="mb-4 font-weight-bold">Address</label>
+						<textarea class="form-control " rows="10" id="addr"></textarea>
+					</div>
+					<input type="submit" id="submit" name="" class="btn btn-outline-info float-right my-5">
+				</form>
+
+			</div>
 			<!-- form end  -->
 		</div>
 	</div>
 
-	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/jquery.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#submit').click(function(){
