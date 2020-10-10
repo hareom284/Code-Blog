@@ -1,4 +1,4 @@
-(contact_page_link)[https://hareom284.github.io/Code-Blog/about.html]
+[contact_page_link](https://hareom284.github.io/Code-Blog/about.html)
 
 # Code-Blog
 Code_Blog is project that develop by Big Drop Studio Team from MMIT Batch-18.
