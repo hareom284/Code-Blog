@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container-fluid bg-light">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3><span class="label label-warning" id="qid">1</span> Print hello world </h3>
+				</div>
+				<div class="modal-body">
+					<div class="col-xs-3 col-xs-offset-5">
+						<div id="loadbar" style="display: none;">
+							<div class="blockG rotateG_01"></div>
+							<div class="blockG rotateG_02"></div>
+							<div class="blockG rotateG_03"></div>
+							<div class="blockG rotateG_04"></div>
+							<div class="blockG rotateG_05"></div>
+							<div class="blockG rotateG_06"></div>
+							<div class="blockG rotateG_07"></div>
+							<div class="blockG rotateG_08"></div>
+						</div>
+					</div>
+
+					<div class="quiz" id="quiz" data-toggle="buttons">
+						<label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 syste.out.print("hello world");</label>
+
+						<label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 printf("hello world);</label>
+
+						<label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">3 print("hello world");</label>
+
+						<label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 print("hello world")</label>
+					</div>
+				</div>
+				<div class="modal-footer text-muted">
+					<a href="python0.html"><span id="prevbtn"><button class="btn btn-primary float-left">Back</button></span></a>
+					<a href="python1.html"><span id="nextbtn"><button class="btn btn-primary float-left">Next</button></span></a>
+					
+					<span id="answer"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../../Bootstrap/js/jquery.js"></script>
+<script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function(){
+    var loading = $('#loadbar').hide();
+    $(document)
+    .ajaxStart(function () {
+        loading.show();
+    }).ajaxStop(function () {
+    	hide();
+    });
+    
+    $("label.btn").on('click',function () {
+    	var choice = $(this).find('input:radio').val();
+    	$('#loadbar').show();
+    	$('#quiz').fadeOut();
+    	setTimeout(function(){
+         $( "#answer" ).html(  $(this).checking(choice) );      
+         $('#quiz').show();
+         $('#loadbar').fadeOut();
+         /* something else */loading
+     }, 1500);
+    });
+
+    $ans = 4;
+    let anss;
+
+    $.fn.checking = function(ck) {
+        if (ck != $ans){
+            anss ='INCORRECT';
+        }
+
+        else{ 
+            anss = 'CORRECT';
+        }
+
+        return anss;
+        
+    };
+
+
+});	
+    </script>
+</html>
