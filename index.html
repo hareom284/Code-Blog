@@ -6,19 +6,21 @@
 	<title>CodeBlog</></title>
 	<link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
 	<style type="text/css">
 		.p_style{
-			line-height: 30px;
+			line-height: 35px;
 		}
 	</style>
+
 </head>
 <body>
-	<!-- Nav start // changed the  logo and bar(HZY) -->
 
+	<!-- Nav start // changed the  logo and bar(HZY) -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<img src="images/logo.png" class="img-fluid" width="80px" height="80px">
 		<a href="#" class="navbar-brand">
-			<h3 class="font-weight-bold">CodeBlog&#60;&#47;&#62;</h3>
+			<h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
 		</a>
 		<button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
 			<span class="navbar-toggler-icon"></span>
@@ -26,15 +28,15 @@
 		<div id="Nav" class="collapse navbar-collapse text-center">
 			<ul class="navbar-nav ml-auto  font-weight-bold">
 				<li class="nav-item mr-3"><a href="index.html" class="nav-link">Home</a></li>
-				<li class="nav-item mr-3"><a href="#" class="nav-link">Languages</a></li>
+				<li class="nav-item mr-3"><a href="code.html" class="nav-link">Languages</a></li>
 				<li class="nav-item mr-3"><a href="about.html" class="nav-link">About</a></li>
 				<li class="nav-item mr-3"><a href="contact.html" class="nav-link">Contact</a></li>
 				
 			</ul>
 		</div>
 	</nav>
-
 	<!-- end nav  -->
+
 	<!-- carousel start // deleted the next/prev icon and indicators work now(HZY)  -->
 	<div class="carousel" id="carosel" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -57,14 +59,15 @@
 		</div>
 	</div>	
 	<!-- end carousel -->
+
 	<!-- Home page start view is start // change a little bit design(HZY) -->
 	<div class="container-fluid my-5">
+		<h3 class="font-weight-bold my-5 text-center">Title</h3>
 		<div class="row">
 			<div class="col-lg-6">
 				<img src="images/pc.jpg" class="w-100 h-100 img-fluid border rounded">
 			</div>
 			<div class="col-lg-6 ">
-				<h3 class="font-weight-bold my-3">Title</h3>
 				<p class="p_style font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, inventore, iusto. Quos id omnis minima impedit quasi nihil molestiae vero, est saepe veniam rem, ex sapiente, ab. Doloribus, voluptate, explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
@@ -77,33 +80,136 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				</p>
-				<button class="btn btn-outline-success my-3 w-50 float-right">Read More</button>
+				<button class="btn btn-info my-3 w-50 float-right">Read More</button>
 			</div>
 		</div>
 	</div>
-
 	<!-- Home page start view is end -->
 
-		<!-- Card Start -->
-			<div class="container-fluid">
-				<h3 class="text-center my-3">Latest Post</h3>
-				<div class="row mx-3 my-5">
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="card">
-							<img class="card-img-top" src="images/wallpaper.jpg">
-							<div class="card-body">
-								<h5 class="card-title">Title</h5>
-								<p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aspernatur adipisci optio in beatae, veniam excepturi officiis aliquid voluptatum, modi harum cum ipsam nobis pariatur corrupti debitis magnam quis non.</p>
-								<a href="#" class="btn btn-outline-success my-3">View More</a>
-							</div>
+	<!-- Card Start -->
+	<div class="container-fluid">
+		<h3 class="text-center my-3">Latest Post</h3>
+		<div class="row my-5">
+			<div class="col-lg-4 col-md-6 mb-5">
+				<div class="card">
+					<img src="images/html1.jpg" class="card-img-top" alt="...">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="font-weight-bold mt-3">HTML</h5>
+							<p class="font-weight-bold my-4 p_style">HTML is the standard markup language for Web pages.
+								With HTML you can create your own Website.
+							HTML is easy to learn and fun.You will enjoy it!</p>
+							<a href="#" class="btn btn-info btn-block">Start learning HTML now >></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-5">
+				<div class="card">
+					<img src="images/css.jpg" class="card-img-top" alt="...">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="font-weight-bold mt-3">CSS</h5>
+							<p class="font-weight-bold my-4 p_style">CSS is the language we use to style an HTML document.
+								CSS describes how HTML elements should be displayed.
+							This tutorial will teach you CSS from basic to advanced.</p>
+							<a href="#" class="btn btn-info btn-block">Start learning CSS now >></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-5">
+				<div class="card">
+					<img src="images/php.png" class="card-img-top" alt="...">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="font-weight-bold mt-3">PHP</h5>
+							<p class="font-weight-bold my-4 p_style">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+							PHP is a widely-used, free, and efficient.</p>
+							<a href="#" class="btn btn-info btn-block">Start learning PHP now >></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Card End -->
-</div>
+	<!-- card end -->
+
+	<!-- python banner start -->
+	<div class="container-fluid">
+		<div class="row mt-4">
+			<!-- Card content -->
+			<div class="col">
+				<div class="card text-body  bg-info mb-3">
+					<div class="card-header">
+						<img src="images/python-logo.png" width="200px">
+					</div>
+					<div class="card-body w-100">
+						<h5 class="card-title">Learn Python in the most social and fun way, with Code-Blog</h5>
+						<p class="card-text">Learn Python, one of today's most in-demand programming languages on-the-go,
+							while playing, for FREE! Compete and collaborate with your fellow SoloLearners, while surfing
+							through short lessons and fun quizzes. Practice writing Python code within the website, collect
+							points, and show off your skills.
+						So don’t wait; dive right in! Start coding with Python!</p>
+
+						<!-- Button -->
+						<a class="btn btn-primary" href="python0.html">Read More</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card content -->
+	</div>
+	<!-- python banner end -->
+
+	<!-- recent start -->
+	<div class="container-fluid">
+		<h3 class="text-center my-3">Recent Post</h3>
+		<div class="row my-5">
+			<div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/python.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">Python</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">Python is a programming language.
+                         Python can be used on a server to create web applications.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning Python now >></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/c++.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">C++</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">C++ programming is a popular general purpose programming language.
+                         C++ is mainly used to create computer programs.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning C++ now >></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/java.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">Java</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">Java is a programming language.
+                         Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning Java now >></a>
+                    </div>
+               </div>
+          </div>
+		</div>
+	</div>
+
 </body>
 <script src="Bootstrap/js/jquery.js"></script>
 <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
