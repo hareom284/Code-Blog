@@ -1,0 +1,17 @@
+.Border_effect
+{
+    border-left: 7px solid greenyellow;
+    text-align: justify;
+}
+/* @media only screen and (min-width:479px)
+{
+    
+    
+    /* .Border_effect
+    {
+        border-left: 7px solid greenyellow;
+        text-align: justify;
+        width: 700px;
+        height: 30px;
+    } */
+} */
