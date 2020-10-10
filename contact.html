@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CodeBlog</></title>
+	<link rel="icon" href="images/favicon.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
@@ -31,11 +32,35 @@
 			padding: 200px;
 			top: 100%;
 		}
+
+		.hr_style{
+			max-width: 15rem;
+			background-color: black;
+			height: 4px;	
+		}
 	</style>
 </head>
 <body>
 
 	<!-- nav start -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<img src="images/logo.png" class="img-fluid" width="80px" height="80px">
+		<a href="#" class="navbar-brand">
+			<h3 class="font-weight-bold ml-3">CodeBlog&#60;&#47;&#62;</h3>
+		</a>
+		<button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="Nav" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto mr-5 font-weight-bold">
+				<li class="nav-item mr-3"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item mr-3"><a href="#" class="nav-link">Languages</a></li>
+				<li class="nav-item mr-3"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item mr-3"><a href="contact.html" class="nav-link">Contact</a></li>
+				
+			</ul>
+		</div>
+	</nav>
 	<!-- nav end -->
 
 	<!-- banner start -->
@@ -69,20 +94,22 @@
 			<!-- contact end -->
 
 			<!-- form start -->
-			<div class="col-md-6 offset-sm-3 offset-md-0 col-sm-4">
-				<h3 class="text-center text-info my-5 ">Keep In Touch With Us</h3>
+			<div class="col-md-6">
+				<h3 class="text-center font-weight-bold text-uppercase mt-5 ">Keep In Touch With Us</h3>
+				<hr class="hr_style my-5">
+				<p class="text-center font-weight-bold my-5">Your feedback is our start for next step.Please leave your thoughts!</p>
 				<form class="w-100"> 
 					<div class="form-group">
 						<label for="Name" class="mb-4 font-weight-bold">Name</label>
-						<input type="text" name="" class="form-control " id="Name">
+						<input type="text" name="" class="form-control " id="name">
 					</div>
 					<div class="form-group">
 						<label for="ph" class="mb-4 font-weight-bold">Phone Number</label>
 						<input type="number" name="" class="form-control " id="ph">
 					</div>
 					<div class="form-group">
-						<label for="addr" class="mb-4 font-weight-bold">Address</label>
-						<textarea class="form-control " rows="10" id="addr"></textarea>
+						<label for="addr" class="mb-4 font-weight-bold">Feedback</label>
+						<textarea class="form-control " rows="6" id="feedback"></textarea>
 					</div>
 					<input type="submit" id="submit" name="" class="btn btn-outline-info float-right my-5">
 				</form>
@@ -97,7 +124,16 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('#submit').click(function(){
-				alert("thank you for your feedback")
+
+				var name = $('#name').val();
+				var ph = $('#ph').val();
+				var feedback = $('#feedback').val();
+
+			
+				if (name!="" && ph!="" && feedback!="") {
+					alert("thank you for your feedback")
+				}
+				
 			})
 		})
 	</script>

@@ -11,6 +11,7 @@ Code_Blog is project that develop by Big Drop Studio Team from MMIT Batch-18.
     - js
   - fontawsone (that contains all libray of fontawsome)
   - Design (Sample handsketch design)
+  - content (It containe all content that related to the course)
   - images(all images that relative to the project)
   - index.html (this file is the main content of the project)
   - about.html(It contain our details )
