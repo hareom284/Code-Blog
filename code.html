@@ -3,85 +3,124 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="images/favicon.png">
      <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
      <link rel="stylesheet" href="Bootstrap/css/custom.css">
-     <title>Code</title>
+     <title>CodeBlog< /></title>
+     <style type="text/css">
+          .p_style{
+               line-height: 35px;
+          }
+     </style>
 </head>
 <body>
-     <div class="container">
+     <!-- nav start -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <img src="images/logo.png" class="img-fluid" width="80px" height="80px">
+          <a href="#" class="navbar-brand">
+               <h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
+          </a>
+          <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="Nav" class="collapse navbar-collapse text-center">
+               <ul class="navbar-nav ml-auto font-weight-bold">
+                    <li class="nav-item mr-3"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item mr-3"><a href="code.html" class="nav-link">Languages</a></li>
+                    <li class="nav-item mr-3"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item mr-3"><a href="contact.html" class="nav-link">Contact</a></li>
+                    
+               </ul>
+          </div>
+     </nav>
+     <!-- nav end -->
+
+     <div class="container my-5">
           <div class="row">
                <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
+                    <div class="card h-100">
                          <img src="images/html1.jpg" class="card-img-top" alt="...">
                          <div class="card-body">
-                              <h5 class="card-title">HTML</h5>
-                              <p class="card-text text-justify">HTML is the standard markup language for Web pages.
+                              <h3 class="card-title font-weight-bold mt-4">HTML</h3>
+                              <p class="card-text font-weight-bold my-5 p_style">HTML is the standard markup language for Web pages.
                                    With HTML you can create your own Website.
-                                   HTML is easy to learn and fun.You will enjoy it!</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning HTML now >></a>
+                              HTML is easy to learn and fun.You will enjoy it!</p>
                          </div>
+                         <div class="card-footer border-0">
+                             <a href="#" class="btn btn-info btn-block">Start learning HTML now >></a>
+                        </div>
+                   </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/css.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">CSS</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">CSS is the language we use to style an HTML document.
+                              CSS describes how HTML elements should be displayed.
+                         This tutorial will teach you CSS from basic to advanced.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning CSS now >></a>
                     </div>
                </div>
-               <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
-                         <img src="images/css.jpg" class="card-img-top" alt="...">
-                         <div class="card-body">
-                              <h5 class="card-title">CSS</h5>
-                              <p class="card-text text-justify">CSS is the language we use to style an HTML document.
-                                   CSS describes how HTML elements should be displayed.
-                                   This tutorial will teach you CSS from basic to advanced.</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning CSS now >></a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
-                         <img src="images/php.png" class="card-img-top" alt="...">
-                         <div class="card-body">
-                              <h5 class="card-title">PHP</h5>
-                              <p class="card-text text-justify">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
-                                   PHP is a widely-used, free, and efficient.</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning PHP now >></a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
-                         <img src="images/python.png" class="card-img-top" alt="...">
-                         <div class="card-body">
-                              <h5 class="card-title">Python</h5>
-                              <p class="card-text text-justify">Python is a programming language.
-                                   Python can be used on a server to create web applications.</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning Python now >></a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
-                         <img src="images/c++.jpg" class="card-img-top" alt="...">
-                         <div class="card-body">
-                              <h5 class="card-title">C++</h5>
-                              <p class="card-text text-justify">C++ programming is a popular general purpose programming language.
-                                   C++ is mainly used to create computer programs.</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning C++ now >></a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-lg-4 col-md-6 mb-5">
-                    <div class="card">
-                         <img src="images/java.jpg" class="card-img-top" alt="...">
-                         <div class="card-body">
-                              <h5 class="card-title">Java</h5>
-                              <p class="card-text text-justify">Java is a programming language.
-                                   Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
-                              <a href="#" class="btn btn-success btn-block">Start learning Java now >></a>
-                         </div>
-                    </div>
-               </div>
-               
           </div>
-     </div>    
-     <script src="Bootstrap/js/jquery.js"></script>
-     <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/php.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">PHP</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+                         PHP is a widely-used, free, and efficient.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning PHP now >></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/python.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">Python</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">Python is a programming language.
+                         Python can be used on a server to create web applications.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning Python now >></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/c++.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">C++</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">C++ programming is a popular general purpose programming language.
+                         C++ is mainly used to create computer programs.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning C++ now >></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+               <div class="card h-100">
+                    <img src="images/java.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                         <h3 class="card-title font-weight-bold mt-4">Java</h3>
+                         <p class="card-text font-weight-bold my-5 p_style">Java is a programming language.
+                         Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+                    </div>
+                    <div class="card-footer">
+                         <a href="#" class="btn btn-info btn-block">Start learning Java now >></a>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+</div>    
+<script src="Bootstrap/js/jquery.js"></script>
+<script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
