@@ -4,44 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Python</title>
+    <link rel="icon" href="../../images/favicon.png">
+    <title>CodeBlog< /></title>
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/all.min.css">
+    <style type="text/css">
+        .p_style{
+            line-height: 35px;
+        }
+
+        div.img_section{
+            float: left;
+        }
+
+        div.img_section img{
+            width: 465px;
+            padding-right: 20px;
+        }
+        div.text_section p{
+            line-height: 35px;
+        }
+
+        .hr_style{
+            max-width: 10rem;
+            background-color: black;
+            height: 4px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row mt-4">
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="../../images/logo.png" class="img-fluid" width="80px" height="80px">
+      <a href="#" class="navbar-brand">
+       <h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
+   </a>
+   <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div id="Nav" class="collapse navbar-collapse text-center">
+       <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item mr-3"><a href="../../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item mr-3"><a href="../../code.html" class="nav-link">Languages</a></li>
+        <li class="nav-item mr-3"><a href="../../about.html" class="nav-link">About</a></li>
+        <li class="nav-item mr-3"><a href="../../contact.html" class="nav-link">Contact</a></li>
 
+    </ul>
+</div>
+</nav>
+<!-- nav end -->
 
-            <!-- Card content -->
-            <div class="card text-body  bg-info mb-3">
-                <div class="card-header"><img src="../../images/python-logo.png" width="200px"></div>
-                <div class="card-body">
-                    <h5 class="card-title">Learn Python in the most social and fun way, with Code-Blog</h5>
-                    <p class="card-text">Learn Python, one of today's most in-demand programming languages on-the-go,
-                        while playing, for FREE! Compete and collaborate with your fellow SoloLearners, while surfing
-                        through short lessons and fun quizzes. Practice writing Python code within the website, collect
-                        points, and show off your skills.
-                        So don’t wait; dive right in! Start coding with Python!</p>
+<!-- banner start -->
+<img src="../../images/python.png" class="w-100 img-fluid">
+<!-- banner end -->
 
-                    <!-- Button -->
-                    <a class="btn btn-primary " href="python0.html">Read More</a>
-                    <i class="fas fa-share-alt text-muted float-right p-1 my-1" title="Share this post"></i>
-                    <i class="fas fa-heart text-muted float-right p-1 my-1 mr-3" title="I like it"></i>
+<!-- content start -->
+<!-- intro Start -->
+<h2 class="font-weight-bold text-uppercase text-center mt-5">What is Python?</h2>
+<hr class="hr_style my-4">
+<p class="p_style mx-3 font-weight-bold text-justify mt-4">
+    <strong class="font_style">Python</strong> is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+</p>
+<p class="p_style mx-3 font-weight-bold text-justify">
+    Python is dyn mx-3amically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library. 
+    Python was created in the late 1980s as a successor to the ABC language. Python 2.0, released in 2000, introduced features like list comprehensions and a garbage collection system with reference counting.
+    Python 3.0, released in 2008, was a major revision of the language that is not completely backward-compatible, and much Python 2 code does not run unmodified on Python 3.
+</p> 
+<p class="p_style mx-3 font-weight-bold text-justify">
+    ThePython 2 language was officially discontinued in 2020 (first planned for 2015), and "Python 2.7.18 is the last Python 2.7 release and therefore the last Python 2 release. No more security patches or other improvements will be released for it.[31][32] With Python 2's end-of-life, only Python 3.6.x and later are supported.
+    Python interpreters are available for many operating systems. A global community of programmers develops and maintains CPython, a free and open-source reference implementation. A non-profit organization, the Python Software Foundation, manages and directs resources for Python and CPython development
+</p>
 
-                </div>
-            </div>
-        </div>
+<!-- intro end -->
 
-        <!-- Card content -->
+<!-- history start -->
+<h2 class="text-center mt-5 font-weight-bold">History of Python</h2>
+<hr class="hr_style mt-4">
+<div class="container-fluid my-5">
 
-        <!-- Card -->
+    <div class="img_section">
+        <img src="../../images/python_author.jpg">
+        <h4 class="text-center my-3">Guido van Rossum</h4>
     </div>
 
+    <div class="text_section font-weight-bold text-justify">
+        <p>Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL), capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as <i>Python's Benevolent Dictator For Life</i>, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. He now shares his leadership as a member of a five-person steering council. In January 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member "Steering Council" to lead the project.
+        </p>
+        <p>
+            Python 2.0 was released on 16 October 2000 with many major new features, including a cycle-detecting garbage collector and support for Unicode. 
+            Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely backward-compatible. Many of its major features were backported to Python 2.6.x and 2.7.x version series. Releases of Python 3 include the 2to3 utility, which automates (at least partially) the translation of Python 2 code to Python 3. 
+            Python 2.7's end-of-life date was initially set at 2015 then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3. 
+        </p>
     </div>
-    <script src="../../Bootstrap/js/jquery.js"></script>
-    <script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
+
+<!-- history end -->
+
+<!-- content end -->
+
+<!-- quiz button start -->
+<div class="container-fluid">
+    <a href="quiz0.html" class=" btn btn-info mb-5 float-right">Test your python knowledge</a>
+</div>
+<script src="../../Bootstrap/js/jquery.js"></script>
+<script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
