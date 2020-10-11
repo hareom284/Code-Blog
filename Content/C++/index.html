@@ -4,15 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../../images/favicon.png">
+    <title>CodeBlog< /></title>
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/all.min.css">
+    <style type="text/css">
+        .p_style{
+            line-height: 35px;
+        }
+
+        div.img_section{
+            float: left;
+        }
+
+        div.img_section img{
+            width: 465px;
+            padding-right: 20px;
+        }
+        div.text_section p{
+            line-height: 35px;
+        }
+
+        .hr_style{
+            max-width: 10rem;
+            background-color: black;
+            height: 4px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <!-- write your code here  -->
-    <script src="../../Bootstrap/js/jquery.min.js"></script>
-    <script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="../../images/logo.png" class="img-fluid" width="80px" height="80px">
+      <a href="#" class="navbar-brand">
+       <h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
+   </a>
+   <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div id="Nav" class="collapse navbar-collapse text-center">
+       <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item mr-3"><a href="../../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item mr-3"><a href="../../code.html" class="nav-link">Languages</a></li>
+        <li class="nav-item mr-3"><a href="../../about.html" class="nav-link">About</a></li>
+        <li class="nav-item mr-3"><a href="../../contact.html" class="nav-link">Contact</a></li>
+
+    </ul>
+</div>
+</nav>
+<!-- nav end -->
+
+<!-- banner start -->
+<img src="../../images/c++1.jpg" class="w-100 img-fluid">
+<!-- banner end -->
+
+<!-- content start -->
+<!-- intro Start -->
+<h2 class="font-weight-bold text-uppercase text-center mt-5">What is C++ ?</h2>
+<hr class="hr_style my-4">
+<p class="p_style mx-3 font-weight-bold text-justify mt-4">
+    <strong class="font_style">C++ </strong> is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms. 
+</p>
+<p class="p_style mx-3 font-weight-bold text-justify">
+	   C++ was designed with a bias toward system programming and embedded, resource-constrained software and large systems, with performance, efficiency, and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, video games, servers (e.g. e-commerce, Web search, or SQL servers), and performance-critical applications (e.g. telephone switches or space probes). 
+	 
+
+</p> 
+<p class="p_style mx-3 font-weight-bold text-justify">
+   C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in December 2017 as ISO/IEC 14882:2017 (informally known as C++17). The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, C++11 and C++14 standards. The current C++17 standard supersedes these with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Danish computer scientist Bjarne Stroustrup at Bell Labs since 1979 as an extension of the C language; he wanted an efficient and flexible language similar to C that also provided high-level features for program organization. Since 2012, C++ is on a three-year release schedule, with C++20 the next planned standard (and then C++23). 
+</p>
+
+<!-- intro end -->
+
+<!-- history start -->
+<h2 class="text-center mt-5 font-weight-bold">History of C++ </h2>
+<hr class="hr_style mt-4">
+<div class="container-fluid my-5">
+
+    <div class="img_section">
+        <img src="../../images/c++_author.jpg">
+        <h4 class="text-center my-3">Bjarne Stroustrup
+		</h4>
+    </div>
+
+    <div class="text_section font-weight-bold text-justify">
+        <p>In 1979, Bjarne Stroustrup, a Danish computer scientist, began work on "C with Classes", the predecessor to C++. The motivation for creating a new language originated from Stroustrup's experience in programming for his PhD thesis. Stroustrup found that Simula had features that were very helpful for large software development, but the language was too slow for practical use, while BCPL was fast but too low-level to be suitable for large software development. When Stroustrup started working in AT&T Bell Labs, he had the problem of analyzing the UNIX kernel with respect to distributed computing. Remembering his Ph.D. experience, Stroustrup set out to enhance the C language with Simula-like features. C was chosen because it was general-purpose, fast, portable and widely used. As well as C and Simula's influences, other languages also influenced this new language, including ALGOL 68, Ada, CLU and ML.
+        </p>
+        <p>
+        Initially, Stroustrup's "C with Classes" added features to the C compiler, Cpre, including classes, derived classes, strong typing, inlining and default arguments. 
+		In 1982, Stroustrup started to develop a successor to C with Classes, which he named "C++" (++being the increment operator in C) after going through several other names. New features were added, including virtual functions, function name and operator overloading, references, constants, type-safe free-store memory allocation (new/delete), improved type checking, and BCPL style single-line comments with two forward slashes (//). Furthermore, Stroustrup developed a new, standalone compiler for C++, Cfront.
+		In 1984, Stroustrup implemented the first stream input/output library. The idea of providing an output operator rather than a named output function was suggested by Doug McIlroy[1] (who had previously suggested Unix pipes).
+		In 1985, the first edition of The C++ Programming Language was released, which became the definitive reference for the language, as there was not yet an official standard. The first commercial implementation of C++ was released in October of the same year.
+ 
+        </p>
+    </div>
+</div>
+
+<!-- history end -->
+
+<!-- content end -->
+
+<!-- quiz button start -->
+<div class="container-fluid">
+    <a href="quiz0.html" class=" btn btn-info mb-5 float-right">Test your C++ knowledge</a>
+</div>
+<script src="../../Bootstrap/js/jquery.js"></script>
+<script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -4,15 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../../images/favicon.png">
+    <title>CodeBlog< /></title>
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/all.min.css">
+    <style type="text/css">
+        .p_style{
+            line-height: 35px;
+        }
+
+        div.img_section{
+            float: left;
+        }
+
+        div.img_section img{
+            width: 465px;
+            padding-right: 20px;
+        }
+        div.text_section p{
+            line-height: 35px;
+        }
+
+        .hr_style{
+            max-width: 10rem;
+            background-color: black;
+            height: 4px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <!-- write your code here  -->
-    <script src="../../Bootstrap/js/jquery.min.js"></script>
-    <script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="../../images/logo.png" class="img-fluid" width="80px" height="80px">
+      <a href="#" class="navbar-brand">
+       <h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
+   </a>
+   <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div id="Nav" class="collapse navbar-collapse text-center">
+       <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item mr-3"><a href="../../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item mr-3"><a href="../../code.html" class="nav-link">Languages</a></li>
+        <li class="nav-item mr-3"><a href="../../about.html" class="nav-link">About</a></li>
+        <li class="nav-item mr-3"><a href="../../contact.html" class="nav-link">Contact</a></li>
+
+    </ul>
+</div>
+</nav>
+<!-- nav end -->
+
+<!-- banner start -->
+<img src="../../images/css2.jpg" class="w-100 img-fluid">
+<!-- banner end -->
+
+<!-- content start -->
+<!-- intro Start -->
+<h2 class="font-weight-bold text-uppercase text-center mt-5">What is CSS?</h2>
+<hr class="hr_style my-4">
+<p class="p_style mx-3 font-weight-bold text-justify mt-4">
+    <strong class="font_style">Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+</p>
+<p class="p_style mx-3 font-weight-bold text-justify">
+	   CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting. 
+	 
+
+</p> 
+<p class="p_style mx-3 font-weight-bold text-justify">
+   Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device. 
+	The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+</p>
+
+<!-- intro end -->
+
+<!-- history start -->
+<h2 class="text-center mt-5 font-weight-bold">History of CSS </h2>
+<hr class="hr_style mt-4">
+<div class="container-fluid my-5">
+
+    <div class="img_section">
+        <img src="../../images/css_author.jpg">
+        <h4 class="text-center my-3">Håkon Wium Lie
+		</h4>
+    </div>
+
+    <div class="text_section font-weight-bold text-justify">
+        <p>CSS was first proposed by Håkon Wium Lie on October 10, 1994. At the time, Lie was working with Tim Berners-Lee at CERN. Several other style sheet languages for the web were proposed around the same time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first W3C CSS Recommendation (CSS1) being released in 1996. In particular, a proposal by Bert Bos was influential; he became co-author of CSS1, and is regarded as co-creator of CSS. Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web. One requirement for a web style sheet language was for style sheets to come from different sources on the web. 
+        </p>
+        <p>
+           Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web. One requirement for a web style sheet language was for style sheets to come from different sources on the web. Therefore, existing style sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style be influenced by multiple style sheets by way of "cascading" styles.As HTML grew, it came to encompass a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the designer more control over site appearance, at the cost of more complex HTML. Variations in web browser implementations, such as ViolaWWW and WorldWideWeb, made consistent site appearance difficult, and users had less control over how web content was displayed. The browser/editor developed by Tim Berners-Lee had style sheets that were hard-coded into the program. The style sheets could therefore not be linked to documents on the web. Robert Cailliau, also of CERN, wanted to separate the structure from the presentation so that different style sheets could describe different presentation for printing, screen-based presentations, and editors. 
+        </p>
+    </div>
+</div>
+
+<!-- history end -->
+
+<!-- content end -->
+
+<!-- quiz button start -->
+<div class="container-fluid">
+    <a href="quiz0.html" class=" btn btn-info mb-5 float-right">Test your css knowledge</a>
+</div>
+<script src="../../Bootstrap/js/jquery.js"></script>
+<script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

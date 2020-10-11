@@ -4,15 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../../images/favicon.png">
+    <title>CodeBlog< /></title>
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../fontawesome/css/all.min.css">
+    <style type="text/css">
+        .p_style{
+            line-height: 35px;
+        }
+
+        div.img_section{
+            float: left;
+        }
+
+        div.img_section img{
+            width: 465px;
+            padding-right: 20px;
+        }
+        div.text_section p{
+            line-height: 35px;
+        }
+
+        .hr_style{
+            max-width: 10rem;
+            background-color: black;
+            height: 4px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <!-- write your code here  -->
-    <script src="../../Bootstrap/js/jquery.min.js"></script>
-    <script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="../../images/logo.png" class="img-fluid" width="80px" height="80px">
+      <a href="#" class="navbar-brand">
+       <h3 class="font-weight-bold ml-2">CodeBlog&#60;&#47;&#62;</h3>
+   </a>
+   <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div id="Nav" class="collapse navbar-collapse text-center">
+       <ul class="navbar-nav ml-auto font-weight-bold">
+        <li class="nav-item mr-3"><a href="../../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item mr-3"><a href="../../code.html" class="nav-link">Languages</a></li>
+        <li class="nav-item mr-3"><a href="../../about.html" class="nav-link">About</a></li>
+        <li class="nav-item mr-3"><a href="../../contact.html" class="nav-link">Contact</a></li>
+
+    </ul>
+</div>
+</nav>
+<!-- nav end -->
+
+<!-- banner start -->
+<img src="../../images/html_post.jpg" class="w-100 img-fluid">
+<!-- banner end -->
+
+<!-- content start -->
+<!-- intro Start -->
+<h2 class="font-weight-bold text-uppercase text-center mt-5">What is HTML?</h2>
+<hr class="hr_style my-4">
+<p class="p_style mx-3 font-weight-bold text-justify mt-4">
+    <strong class="font_style">Hypertext Markup Language (HTML) </strong>is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+</p>
+<p class="p_style mx-3 font-weight-bold text-justify">
+	   Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.  HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+	 
+
+</p> 
+<p class="p_style mx-3 font-weight-bold text-justify">
+  Tags such as  and  directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.
+</p>
+
+<!-- intro end -->
+
+<!-- history start -->
+<h2 class="text-center mt-5 font-weight-bold">History of HTML </h2>
+<hr class="hr_style mt-4">
+<div class="container-fluid my-5">
+
+    <div class="img_section">
+        <img src="../../images/html_author.jpg">
+        <h4 class="text-center my-3">
+		Tim Berners-Lee
+		</h4>
+    </div>
+
+    <div class="text_section font-weight-bold text-justify">
+        <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system. Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN.
+		The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN.
+        </p>
+        <p>
+           HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are found in the 1988 ISO technical report TR 9537 Techniques for using SGML, which in turn covers the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system: these formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely print effects, with also the separation of structure and markup; HTML has been progressively moved in this direction with CSS.
+           Berners-Lee considered HTML to be an application of SGML. It was formally defined as such by the Internet Engineering Task Force (IETF) with the mid-1993 publication of the first proposal for an HTML specification, the "Hypertext Markup Language (HTML)" Internet Draft by Berners-Lee and Dan Connolly, which included an SGML Document type definition to define the grammar. The draft expired after six months, but was notable for its acknowledgment of the NCSA Mosaic browser's custom tag for embedding in-line images, reflecting the IETF's philosophy of basing standards on successful prototypes.
+        </p>
+    </div>
+</div>
+
+<!-- history end -->
+
+<!-- content end -->
+
+<!-- quiz button start -->
+<div class="container-fluid">
+    <a href="quiz0.html" class=" btn btn-info mb-5 float-right">Test your HTML knowledge</a>
+</div>
+<script src="../../Bootstrap/js/jquery.js"></script>
+<script src="../../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
